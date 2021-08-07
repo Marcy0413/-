@@ -1,0 +1,81 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%; /* 横幅いっぱい */
+  height: 50px; /* 高さ120px */
+  background: #ff9a4b;
+}
+
+.main {
+  width: 100%;
+  height: 400px;
+}
+
+.blog {
+  display: block; /* Flexboxの利用 */
+  justify-content: center; /* 子要素の横並び・中央寄せ */
+}
+
+.blog-item {
+  background-color: #eeeeee;
+  margin: 50px 15px;
+  width: 300px;
+}
+
+.social1 {
+  background: #ff9a4b;
+  position: absolute; /* headerの左上を基準に絶対位置で指定する */
+}
+
+.social2 {
+  background: #ff9a4b;
+  position: absolute; /* headerの左上を基準に絶対位置で指定する */
+}
+
+.social3 {
+  background: #ff9a4b;
+  position: absolute; /* headerの左上を基準に絶対位置で指定する */
+}
+
+.example{
+  color: white;
+}
+
+.blog-image {
+  width: 280px;
+  height: 150px;
+  margin: 10px 10px 15px 10px;
+}
+
+.blog-date1 {
+  font-size: 20px;
+  margin: 0px 10px;
+}
+
+.blog-date2 {
+  font-size: 12px;
+  margin: 5px 10px 10px 10px;
+}
+
+.footer {
+  width: 100%;
+  height: 50px;
+  background: #aaaaaa;
+}
+
+
+
+@media screen and (max-width:425px) {
+  header {
+    width: 100%;
+  }
+
+  .blog-item {
+    width: 90%;
+  }
+}
